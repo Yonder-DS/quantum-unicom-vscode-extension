@@ -1,0 +1,34 @@
+{
+  "name": "quantum-configuration-sample",
+  "displayName": "Quantum Configuration",
+  "description": "Quantum Configuration",
+  "version": "0.0.1",
+  "publisher": "ryanc",
+  "engines": {
+    "vscode": "^1.28.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "quantum",
+        "extensions": [
+          ".qin",
+          ".qt"
+        ],
+        "aliases": [
+          "Quantum",
+          "qt"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [{
+        "language": "quantum",
+        "scopeName": "source.quantum",
+        "path": "./syntaxes/quantum.tmLanguage.json"
+    }]
+  }
+}
