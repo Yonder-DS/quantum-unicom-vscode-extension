@@ -14,8 +14,9 @@
     "languages": [
       {
         "id": "quantum",
-        "extensions": [".qin", ".qt"],
-        "filenames": ["axes", "edits", "edit", "run", "run1", "break"],
+        "extensions": [".qin", ".qax"],
+        "filenames": ["axes", "tabs"],
+        "filenamePatterns": ["run*", "break*", "edit*", "base*", "mean*", "brk*", "data*"],
         "aliases": [
           "Quantum",
           "qt"
