@@ -10,6 +10,7 @@
   "categories": [
     "Programming Languages"
   ],
+  "icon": "quantum-icon.png",
   "contributes": {
     "languages": [
       {
