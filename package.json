@@ -28,7 +28,7 @@
     "grammars": [{
         "language": "quantum",
         "scopeName": "source.quantum",
-        "path": "./syntaxes/quantum.tmLanguage.json"
+        "path": "./syntaxes/quantum,.tmLanguage.json"
     }]
   }
 }
