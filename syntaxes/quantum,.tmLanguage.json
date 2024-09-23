@@ -17,6 +17,9 @@
             "include": "#include-files"
         },
         {
+            "include": "#definitions"
+        },
+        {
             "include": "#punctuation"
         },
         {
