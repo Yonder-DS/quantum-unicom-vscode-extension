@@ -72,8 +72,15 @@
             "patterns": [
                 {
                     "name": "text.quantum",
-                    "begin": "^\\b(ttl|ttc|ttr|ttg|ttn)",
-                    "end": "$"
+                    "match": "^\\b(ttl|ttc|ttr|ttg|ttn)(.*)$",
+                    "captures": {
+                        "1": {
+                            "name": "type.text.quantum"
+                        },
+                        "2": {
+                            "name": "text.value.quantum"
+                        }
+                    }
                 }
             ]
         },
@@ -82,7 +89,16 @@
                 {
                     "comment": "axes n statements",
                     "name": "axes.statement.n.quantum",
-                    "match": "^\\b(n[0-9]{2}|m)"
+                    "begin": "^\\b(n[0-9]{2}|m)(.*)[;$]",
+                    "end": "([;$])",
+                    "captures": {
+                        "1": {
+                            "name": "type.basic-statement.quantum"
+                        },
+                        "2":{
+                            "name":"basic-statement.name.quantum"
+                        }
+                    }
                 }
             ]
         },
