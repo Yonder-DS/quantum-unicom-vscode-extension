@@ -14,13 +14,13 @@
             "include": "#axes"
         },
         {
+            "include": "#options"
+        },
+        {
             "include": "#include-files"
         },
         {
             "include": "#definitions"
-        },
-        {
-            "include": "#options"
         },
         {
             "include": "#punctuation"
