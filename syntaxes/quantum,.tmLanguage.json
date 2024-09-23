@@ -26,11 +26,10 @@
     "repository": {
         "comments": {
             "patterns": [
-
                 {
                     "comment": "line comments",
                     "name": "comment.line.slash-asterisk.quantum",
-                    "match": "(\\/\\*).*$",
+                    "match": "(\\/\\*|[Cc]).*$",
                     "captures": {
                         "1": {
                             "name": "punctuation.definition.comment.quantum"
@@ -365,7 +364,7 @@
             "patterns": [
                 {
                     "comment": "variables",
-                    "name": "variable.other.quantum",
+                    "name": "variable.quantum",
                     "match": "\\b(?<!(?<!\\.)\\.)(?:r#(?!(crate|[Ss]elf|super)))?[a-z0-9_]+\\b"
                 }
             ]
