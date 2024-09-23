@@ -28,7 +28,7 @@
             "patterns": [
                 {
                     "comment": "line comments",
-                    "name": "comment.line.slash-asterisk.quantum",
+                    "name": "comment.line.quantum",
                     "match": "^(\\/\\*|[Cc]).*$",
                     "captures": {
                         "1": {
