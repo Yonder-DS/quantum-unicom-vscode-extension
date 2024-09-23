@@ -146,8 +146,9 @@
                 {
                     "comment": "include files",
                     "name": "include.quantum",
-                    "match": "^(\\*include)\\s+([^\\s;]+).*$",
-                    "captures": {
+                    "begin": "^(\\*include)\\s+([^\\s;]+)",
+                    "end": "$",
+                    "beginCaptures": {
                         "1": {
                             "name": "type.include.quantum"
                         },
