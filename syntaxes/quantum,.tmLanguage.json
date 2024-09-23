@@ -170,6 +170,42 @@
                 }
             ]
         },
+        "column-code-conditions": {
+            "patterns": [
+                {
+                    "comment": "c= conditions",
+                    "name": "codition.columncode.quantum",
+                    "begin": "c=",
+                    "end": ";",
+                    "patterns": [
+                        {
+                            "include": "#columns"
+                        }
+                    ]
+                }
+            ]
+        },
+        "columns": {
+            "patterns": [
+                {
+                    "comment": "columns with ()",
+                    "name": "column.enclosed.quantum",
+                    "begin": "c\\(",
+                    "end": "\\)",
+                    "patterns": [
+                        {
+                            "name": "column.separator.quantum",
+                            "match": "(,)"
+                        }
+                    ]
+                },
+                {
+                    "comment": "columns without ()",
+                    "name": "column.unenclosed.quantum",
+                    "match": "c[a-z]?\\d+"
+                }
+            ]
+        },
         "definitions": {
             "patterns": [
                 {
