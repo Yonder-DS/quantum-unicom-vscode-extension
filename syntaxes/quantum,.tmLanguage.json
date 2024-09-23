@@ -159,20 +159,6 @@
                 }
             ]
         },
-        "options": {
-            "patterns": [
-                {
-                    "comment": "options",
-                    "name": "options.quantum",
-                    "match": ";\\s*([^\\s=;]+)",
-                    "captures": {
-                        "1": {
-                            "name": "type.option.quantum"
-                        }
-                    }
-                }
-            ]
-        },
         "column-code-conditions": {
             "patterns": [
                 {
@@ -188,6 +174,21 @@
                 }
             ]
         },
+        "options": {
+            "patterns": [
+                {
+                    "comment": "options",
+                    "name": "options.quantum",
+                    "match": ";\\s*([^\\s=;]+)",
+                    "captures": {
+                        "1": {
+                            "name": "type.option.quantum"
+                        }
+                    }
+                }
+            ]
+        },
+
         "columns": {
             "patterns": [
                 {
