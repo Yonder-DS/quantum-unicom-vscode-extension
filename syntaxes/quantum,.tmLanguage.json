@@ -14,13 +14,13 @@
             "include": "#axes"
         },
         {
-            "include": "#options"
-        },
-        {
-            "include": "#include-files"
+            "include": "#include-filesxxx"
         },
         {
             "include": "#definitions"
+        },
+        {
+            "include": "#options"
         },
         {
             "include": "#punctuation"
@@ -161,11 +161,6 @@
         "definitions": {
             "patterns": [
                 {
-                    "patterns": [
-                        {
-                            "include": "#options"
-                        }
-                    ],
                     "comment": "define variables",
                     "name": "define.quantum",
                     "match": "^(\\*def).*$",
