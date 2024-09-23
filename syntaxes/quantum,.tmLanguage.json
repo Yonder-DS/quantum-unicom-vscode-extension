@@ -154,12 +154,7 @@
                         "2":{
                             "name":"include.file-name.quantum"
                         }
-                    },
-                    "patterns": [
-                        {
-                            "include": "#options"
-                        }
-                    ]
+                    }
                 }
             ]
         },
