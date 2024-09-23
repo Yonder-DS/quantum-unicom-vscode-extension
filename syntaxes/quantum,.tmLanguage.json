@@ -97,7 +97,7 @@
             "patterns": [
                 {
                     "comment": "axes n statements",
-                    "name": "variable.statement.n.quantum",
+                    "name": "axes.statement.n.quantum",
                     "begin": "^\\b(n[0-9]{2}|m)([^;]*)",
                     "end": "$",
                     "captures": {
@@ -124,10 +124,7 @@
                     "match": "^\\b(col|val|fld).*(\\n\\+.*)*",
                     "captures": {
                         "1": {
-                            "name": "type.numeric-statement.quantum"
-                        },
-                        "2":{
-                            "name":"numeric-statement.name.quantum"
+                            "name": "keyword.numeric-statement.quantum"
                         }
                     }
                 }
@@ -142,7 +139,7 @@
                     "end": "$",
                     "beginCaptures": {
                         "1": {
-                            "name": "type.include.quantum"
+                            "name": "keyword.control.include.quantum"
                         },
                         "2":{
                             "name":"include.file-name.quantum"
@@ -182,7 +179,7 @@
                     "match": ";\\s*([^\\s=;]+)",
                     "captures": {
                         "1": {
-                            "name": "type.option.quantum"
+                            "name": "constant.other.option"
                         }
                     }
                 }
@@ -193,7 +190,7 @@
             "patterns": [
                 {
                     "comment": "columns with ()",
-                    "name": "column.enclosed.quantum",
+                    "name": "entity.name.function",
                     "begin": "c\\(",
                     "end": "\\)",
                     "patterns": [
@@ -205,7 +202,7 @@
                 },
                 {
                     "comment": "columns without ()",
-                    "name": "column.unenclosed.quantum",
+                    "name": "entity.name.function",
                     "match": "c[a-z]?\\d+"
                 }
             ]
@@ -218,7 +215,7 @@
                     "match": "^(\\*def).*$",
                     "captures": {
                         "1": {
-                            "name": "type.define.quantum"
+                            "name": "keyword.control.define.quantum"
                         }
                     }
                 }
@@ -238,12 +235,12 @@
                 },
                 {
                     "comment": "dollor brackets",
-                    "name": "punctuation.brackets.dollar.quantum",
+                    "name": "string.dollar.quantum",
                     "match": "[$$]"
                 },
                 {
                     "comment": "single quote brackets",
-                    "name": "punctuation.single-quote.quantum",
+                    "name": "string.quoted.single.quantum",
                     "match": "['']"
                 }
             ]
