@@ -41,6 +41,9 @@
                     "include": "#labels"
                 },
                 {
+                    "include": "#texts"
+                },
+                {
                     "include": "#basic-statements"
                 },
                 {
@@ -54,6 +57,14 @@
                     "comment": "l statement",
                     "name": "label.statement.quantum",
                     "match": "^l\\s(\\b([[:alpha:]_]\\w*)\\b)"
+                }
+            ]
+        },
+        "texts": {
+            "patterns": [
+                {
+                    "name": "text.quantum",
+                    "match": "^\\b(ttl|ttc|ttr|ttg|ttn)"
                 }
             ]
         },
