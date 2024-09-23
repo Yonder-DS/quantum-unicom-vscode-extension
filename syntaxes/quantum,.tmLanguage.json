@@ -161,6 +161,11 @@
         "definitions": {
             "patterns": [
                 {
+                    "patterns": [
+                        {
+                            "include": "#options"
+                        }
+                    ],
                     "comment": "define variables",
                     "name": "define.quantum",
                     "match": "^(\\*def).*$",
