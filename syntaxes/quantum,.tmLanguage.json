@@ -125,7 +125,7 @@
             "patterns": [
                 {
                     "comment": "include files",
-                    "name": "axes.statement.numeric.quantum",
+                    "name": "include.quantum",
                     "match": "^(\\*include)\\s+([^\\s;]+).*$",
                     "captures": {
                         "1": {
@@ -133,6 +133,20 @@
                         },
                         "2":{
                             "name":"include.file-name.quantum"
+                        }
+                    }
+                }
+            ]
+        },
+        "definitions": {
+            "patterns": [
+                {
+                    "comment": "define variables",
+                    "name": "define.quantum",
+                    "match": "^(\\*def)\\s.*$",
+                    "captures": {
+                        "1": {
+                            "name": "type.define.quantum"
                         }
                     }
                 }
