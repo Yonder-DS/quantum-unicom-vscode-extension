@@ -68,10 +68,10 @@
                     "match": "^(l)\\s(\\b([[:alpha:]_]\\w*)\\b)",
                     "captures": {
                         "1": {
-                            "name": "strong.label.statement.quantum"
+                            "name": "storage.type.lstatement.quantum"
                         },
                         "2": {
-                            "name": "label.statement.name.quantum"
+                            "name": "variable.lstatement.quantum"
                         }
                     }
                 }
@@ -84,7 +84,7 @@
                     "match": "^\\b(ttl|ttc|ttr|ttg|ttn)(.*)$",
                     "captures": {
                         "1": {
-                            "name": "type.text.quantum"
+                            "name": "keyword.text.quantum"
                         },
                         "2": {
                             "name": "text.value.quantum"
@@ -97,12 +97,12 @@
             "patterns": [
                 {
                     "comment": "axes n statements",
-                    "name": "axes.statement.n.quantum",
+                    "name": "variable.statement.n.quantum",
                     "begin": "^\\b(n[0-9]{2}|m)([^;]*)",
                     "end": "$",
                     "captures": {
                         "1": {
-                            "name": "type.basic-statement.quantum"
+                            "name": "keyword.basic-statement.quantum"
                         },
                         "2":{
                             "name":"basic-statement.name.quantum"
