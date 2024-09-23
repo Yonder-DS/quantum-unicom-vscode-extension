@@ -127,20 +127,6 @@
                 }
             ]
         },
-        "options": {
-            "patterns": [
-                {
-                    "comment": "options",
-                    "name": "options.quantum",
-                    "match": ";\\s*([^\\s=;]+)",
-                    "captures": {
-                        "1": {
-                            "name": "type.option.quantum"
-                        }
-                    }
-                }
-            ]
-        },
         "include-files": {
             "patterns": [
                 {
@@ -154,6 +140,25 @@
                         },
                         "2":{
                             "name":"include.file-name.quantum"
+                        }
+                    },
+                    "patterns": [
+                        {
+                            "include": "#options"
+                        }
+                    ]
+                }
+            ]
+        },
+        "options": {
+            "patterns": [
+                {
+                    "comment": "options",
+                    "name": "options.quantum",
+                    "match": ";\\s*([^\\s=;]+)",
+                    "captures": {
+                        "1": {
+                            "name": "type.option.quantum"
                         }
                     }
                 }
