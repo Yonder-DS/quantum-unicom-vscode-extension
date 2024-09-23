@@ -179,7 +179,7 @@
                     "comment": "c= conditions",
                     "name": "codition.columncode.quantum",
                     "begin": "c=",
-                    "end": ";",
+                    "end": "[;$]",
                     "patterns": [
                         {
                             "include": "#columns"
