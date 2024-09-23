@@ -118,6 +118,23 @@
                 }
             ]
         },
+        "include-files": {
+            "patterns": [
+                {
+                    "comment": "include files",
+                    "name": "axes.statement.numeric.quantum",
+                    "match": "^(\\*include)\\s+([^\\s;]+).*$",
+                    "captures": {
+                        "1": {
+                            "name": "type.include.quantum"
+                        },
+                        "2":{
+                            "name":"include.file-name.quantum"
+                        }
+                    }
+                }
+            ]
+        },
         "punctuation": {
             "patterns": [
                 {
