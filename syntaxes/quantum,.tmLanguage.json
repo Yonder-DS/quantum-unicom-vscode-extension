@@ -20,6 +20,9 @@
             "include": "#definitions"
         },
         {
+            "include": "#options"
+        },
+        {
             "include": "#punctuation"
         },
         {
@@ -119,6 +122,20 @@
                         },
                         "2":{
                             "name":"numeric-statement.name.quantum"
+                        }
+                    }
+                }
+            ]
+        },
+        "options": {
+            "patterns": [
+                {
+                    "comment": "options",
+                    "name": "options.quantum",
+                    "match": ";\\s*([^\\s=;]+)",
+                    "captures": {
+                        "1": {
+                            "name": "type.option.quantum"
                         }
                     }
                 }
