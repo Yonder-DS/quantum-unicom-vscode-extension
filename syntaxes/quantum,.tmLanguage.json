@@ -68,7 +68,7 @@
                     "match": "^(l)\\s(\\b([[:alpha:]_]\\w*)\\b)",
                     "captures": {
                         "1": {
-                            "name": "type.label.statement.quantum"
+                            "name": "strong.label.statement.quantum"
                         },
                         "2": {
                             "name": "label.statement.name.quantum"
