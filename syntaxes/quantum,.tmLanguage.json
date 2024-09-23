@@ -151,6 +151,9 @@
                     "patterns": [
                         {
                             "include": "#options"
+                        },
+                        {
+                            "include": "#column-code-conditions"
                         }
                     ]
                 }
