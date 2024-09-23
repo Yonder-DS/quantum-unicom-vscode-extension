@@ -40,7 +40,7 @@
                 {
                     "comment": "l statement",
                     "name": "label.statement.quantum",
-                    "match": "^(l).*[;$]"
+                    "match": "^l (\\w)"
                 }
             ]
         },
