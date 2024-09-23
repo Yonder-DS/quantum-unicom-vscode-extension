@@ -105,7 +105,7 @@
                             "name": "keyword.basic-statement.quantum"
                         },
                         "2":{
-                            "name":"basic-statement.name.quantum"
+                            "name":"source.groovy.embedded.basic-statement.quantum"
                         }
                     },
                     "patterns": [
