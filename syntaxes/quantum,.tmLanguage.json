@@ -14,7 +14,7 @@
             "include": "#axes"
         },
         {
-            "include": "#include-filesxxx"
+            "include": "#include-files"
         },
         {
             "include": "#definitions"
