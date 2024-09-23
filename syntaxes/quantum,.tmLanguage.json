@@ -11,16 +11,13 @@
             "include": "#comments"
         },
         {
-            "include": "#functions"
+            "include": "#label"
         },
         {
             "include": "#punctuation"
         },
         {
-            "include": "#strings"
-        },
-        {
-            "include": "#variables"
+            "include": "#xx"
         }
     ],
     "repository": {
@@ -101,15 +98,6 @@
                             "include": "#escapes"
                         }
                     ]
-                }
-            ]
-        },
-        "variables": {
-            "patterns": [
-                {
-                    "comment": "variables",
-                    "name": "variable.quantum",
-                    "match": "\\b(?<!(?<!\\.)\\.)(?:r#(?!(crate|[Ss]elf|super)))?[a-z0-9_]+\\b"
                 }
             ]
         }
