@@ -11,7 +11,10 @@
             "include": "#comments"
         },
         {
-            "include": "#label"
+            "include": "#labels"
+        },
+        {
+            "include": "#elements"
         },
         {
             "include": "#punctuation"
@@ -35,22 +38,26 @@
                 }
             ]
         },
-        "label": {
+        "labels": {
             "patterns": [
                 {
                     "comment": "l statement",
                     "name": "label.statement.quantum",
+                    "match": "^l\\s(\\b([[:alpha:]_]\\w*)\\b)"
+                }
+            ]
+        },
+        "elements": {
+            "patterns": [
+                {
+                    "comment": "axis elements",
+                    "name": "axis.element.quantum",
                     "match": "^l\\s(\\w)+"
                 }
             ]
         },
         "punctuation": {
             "patterns": [
-                {
-                    "comment": "curly braces",
-                    "name": "punctuation.brackets.curly.quantum",
-                    "match": "[{}]"
-                },
                 {
                     "comment": "parentheses, round brackets",
                     "name": "punctuation.brackets.round.quantum",
@@ -60,11 +67,6 @@
                     "comment": "semicolon",
                     "name": "punctuation.semi.quantum",
                     "match": ";"
-                },
-                {
-                    "comment": "square brackets",
-                    "name": "punctuation.brackets.square.quantum",
-                    "match": "[\\[\\]]"
                 },
                 {
                     "comment": "dollor brackets",
