@@ -56,7 +56,12 @@
                 {
                     "comment": "l statement",
                     "name": "label.statement.quantum",
-                    "match": "^l\\s(\\b([[:alpha:]_]\\w*)\\b)"
+                    "match": "^l\\s(\\b([[:alpha:]_]\\w*)\\b)",
+                    "captures": {
+                        "1": {
+                            "name": "label.statement.name.quantum"
+                        }
+                    }
                 }
             ]
         },
