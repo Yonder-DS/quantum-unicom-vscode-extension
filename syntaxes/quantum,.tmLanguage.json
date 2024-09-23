@@ -47,12 +47,21 @@
                 }
             ]
         },
-        "elements": {
+        "basic-statements": {
             "patterns": [
                 {
-                    "comment": "axis elements",
-                    "name": "axis.element.quantum",
-                    "match": "^\\b(ttl|col|val|fld|n[0-9]{2}|m)"
+                    "comment": "axis n statements",
+                    "name": "axis.statement.n.quantum",
+                    "match": "^\\b(n[0-9]{2}|m)"
+                }
+            ]
+        },
+        "numeric-statements": {
+            "patterns": [
+                {
+                    "comment": "axis numeric statements",
+                    "name": "axis.statement.numeric.quantum",
+                    "match": "^\\b(col|val|fld)"
                 }
             ]
         },
