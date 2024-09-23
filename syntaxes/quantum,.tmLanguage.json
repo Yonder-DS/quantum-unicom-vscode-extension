@@ -150,10 +150,10 @@
                     },
                     "patterns": [
                         {
-                            "include": "#options"
+                            "include": "#column-code-conditions"
                         },
                         {
-                            "include": "#column-code-conditions"
+                            "include": "#options"
                         }
                     ]
                 }
@@ -178,7 +178,7 @@
                 {
                     "comment": "c= conditions",
                     "name": "codition.columncode.quantum",
-                    "begin": "=c",
+                    "begin": "c=",
                     "end": "(;|\n)",
                     "patterns": [
                         {
