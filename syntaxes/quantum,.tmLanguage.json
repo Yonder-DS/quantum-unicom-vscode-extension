@@ -69,7 +69,8 @@
             "patterns": [
                 {
                     "name": "text.quantum",
-                    "begin": "^\\b(ttl|ttc|ttr|ttg|ttn)"
+                    "begin": "^\\b(ttl|ttc|ttr|ttg|ttn)",
+                    "end": "$"
                 }
             ]
         },
