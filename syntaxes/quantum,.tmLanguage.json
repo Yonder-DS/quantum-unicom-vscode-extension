@@ -91,6 +91,11 @@
                     "comment": "dollor brackets",
                     "name": "punctuation.brackets.dollar.quantum",
                     "match": "[$$]"
+                },
+                {
+                    "comment": "single quote brackets",
+                    "name": "punctuation.single-quote.quantum",
+                    "match": "['']"
                 }
             ]
         },
