@@ -227,7 +227,7 @@
                     "comment": "arguments",
                     "name": "arguments.quantum",
                     "begin": "(;|\\+)",
-                    "end": "$",
+                    "end": "\n",
                     "captures": {
                         "1":{
                             "patterns": [
