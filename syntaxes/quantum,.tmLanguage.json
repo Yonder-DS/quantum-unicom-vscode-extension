@@ -17,13 +17,13 @@
             "include": "#axes"
         },
         {
+            "include": "#arguments"
+        },
+        {
             "include": "#include-files"
         },
         {
             "include": "#definitions"
-        },
-        {
-            "include": "#options"
         },
         {
             "include": "#punctuation"
@@ -141,7 +141,7 @@
                             "include": "#variables"
                         },
                         {
-                            "include": "#options"
+                            "include": "#arguments"
                         }
                     ]
                 }
@@ -160,7 +160,7 @@
                     },
                     "patterns": [
                         {
-                            "include": "#options"
+                            "include": "#arguments"
                         }
                     ]
                 }
@@ -186,7 +186,7 @@
                             "include": "#variables"
                         },
                         {
-                            "include": "#options"
+                            "include": "#arguments"
                         }
                     ]                    
                 }
@@ -215,7 +215,7 @@
                             "include": "#variables"
                         },
                         {
-                            "include": "#options"
+                            "include": "#arguments"
                         }
                     ]
                 }
@@ -233,6 +233,26 @@
                             "include": "#columns"
                         }
                     ]
+                }
+            ]
+        },
+        "arguments": {
+            "patterns": [
+                {
+                    "comment": "arguments",
+                    "name": "arguments.section.quantum",
+                    "match": ";\\s*([^\\n;]+)",
+                    "captures": {
+                        "1": {
+                            "name": "arguments.quantum",
+                            "patterns": [
+                                {
+                                    "include": "#options"
+                                }
+                            ]
+                        }
+                    }
+                    
                 }
             ]
         },
