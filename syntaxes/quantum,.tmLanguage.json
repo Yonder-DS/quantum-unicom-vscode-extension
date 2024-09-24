@@ -241,10 +241,11 @@
                 {
                     "comment": "arguments",
                     "name": "arguments.section.quantum",
-                    "match": ";\\s*([^\\n;]+)",
+                    "begin": ";",
+                    "end": "(;|$)",
                     "captures": {
                         "1": {
-                            "name": "arguments.quantum",
+                            "name": "strong.arguments.quantum",
                             "patterns": [
                                 {
                                     "include": "#options"
