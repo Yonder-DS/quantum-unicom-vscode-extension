@@ -255,10 +255,10 @@
                     "end": "(;|\\n)",
                     "patterns": [
                         {
-                            "include": "#columns"
+                            "include": "#codes"
                         },
                         {
-                            "include": "#codes"
+                            "include": "#columns"
                         }
                     ]
                 }
@@ -282,6 +282,11 @@
                     "comment": "columns without ()",
                     "name": "meta.definition.variable.name",
                     "match": "c[a-z]?\\d+"
+                },
+                {
+                    "comment": "columns value",
+                    "name": "meta.definition.variable.name",
+                    "match": "[0-9]{3,4}"
                 }
             ]
         },
