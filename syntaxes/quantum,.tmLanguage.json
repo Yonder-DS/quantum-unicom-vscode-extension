@@ -247,7 +247,7 @@
             "patterns": [
                 {
                     "comment": "options",
-                    "match": ";[[:blank:]]*([^=;\n]+)",
+                    "match": "[[:blank:]]*([^=;\n]+)",
                     "captures": {
                         "1": {
                             "name": "support.function.option.quantum"
