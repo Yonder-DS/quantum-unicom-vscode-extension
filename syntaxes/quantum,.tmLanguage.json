@@ -221,21 +221,6 @@
                 }
             ]
         },
-        "column-code-conditions": {
-            "patterns": [
-                {
-                    "comment": "c= conditions",
-                    "name": "codition.columncode.quantum",
-                    "begin": "c=",
-                    "end": "(;|\n)",
-                    "patterns": [
-                        {
-                            "include": "#columns"
-                        }
-                    ]
-                }
-            ]
-        },
         "arguments": {
             "patterns": [
                 {
@@ -254,13 +239,16 @@
                     },
                     "patterns": [
                             {
-                                "include": "#options"
-                            },
-                            {
                                 "include": "#variables"
                             },
                             {
+                                "include": "#options"
+                            },
+                            {
                                 "include": "#punctuation"
+                            },
+                            {
+                                "include": "#column-code-conditions"
                             }
                         ]
                 }
@@ -270,7 +258,7 @@
             "patterns": [
                 {
                     "comment": "options",
-                    "match": "(.*)=",
+                    "match": "[^=]=",
                     "captures": {
                         "1": {
                             "name": "support.function.option.quantum"
@@ -280,7 +268,24 @@
                 }
             ]
         },
-
+        "column-code-conditions": {
+            "patterns": [
+                {
+                    "comment": "c= conditions",
+                    "name": "codition.columncode.quantum",
+                    "begin": "c",
+                    "end": "(;|\n)",
+                    "patterns": [
+                        {
+                            "include": "#columns"
+                        },
+                        {
+                            "include": "#codes"
+                        }
+                    ]
+                }
+            ]
+        },
         "columns": {
             "patterns": [
                 {
