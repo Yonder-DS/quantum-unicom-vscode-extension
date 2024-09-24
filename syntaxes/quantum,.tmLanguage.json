@@ -90,7 +90,12 @@
                         "2": {
                             "name": "variable.lstatement.quantum"
                         }
-                    }
+                    },
+                    "patterns": [
+                        {
+                            "include": "#variables"
+                        }
+                    ]                    
                 }
             ]
         },
@@ -130,6 +135,12 @@
                     },
                     "patterns": [
                         {
+                            "include": "#columns"
+                        },
+                        {
+                            "include": "#variables"
+                        },
+                        {
                             "include": "#options"
                         }
                     ]
@@ -146,7 +157,12 @@
                         "1": {
                             "name": "keyword.numeric-statement.quantum"
                         }
-                    }
+                    },
+                    "patterns": [
+                        {
+                            "include": "#options"
+                        }
+                    ]
                 }
             ]
         },
