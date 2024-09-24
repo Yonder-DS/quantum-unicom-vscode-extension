@@ -278,6 +278,9 @@
                     "patterns": [
                         {
                             "include": "#columns"
+                        },
+                        {
+                            "include": "#codes"
                         }
                     ]
                 }
@@ -309,7 +312,7 @@
                 {
                     "comment": "codes of column",
                     "name": "string.quantum",
-                    "begin": "('|\n)",
+                    "begin": "('|\\$)",
                     "end": "$1"
                 }
             ]
