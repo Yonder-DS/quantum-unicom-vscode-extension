@@ -271,15 +271,6 @@
                             "name": "support.function.option.quantum"
                         }
                     },
-                    "endCaptures": {
-                        "1":{
-                            "patterns": [
-                                {
-                                    "include": "#punctuation"
-                                }
-                            ]
-                        }
-                    },
                     "patterns": [
                         {
                             "include": "#columns"
