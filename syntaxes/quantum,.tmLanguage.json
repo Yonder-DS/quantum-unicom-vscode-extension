@@ -273,7 +273,7 @@
                 {
                     "comment": "c= conditions",
                     "name": "codition.columncode.quantum",
-                    "begin": "c",
+                    "begin": "c=",
                     "end": "(;|\n)",
                     "patterns": [
                         {
