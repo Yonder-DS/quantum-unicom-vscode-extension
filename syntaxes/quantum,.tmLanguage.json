@@ -244,16 +244,19 @@
                     "begin": "(;|\\+)",
                     "end": "$",
                     "captures": {
-                        "1": {
-                            "name": "strong.arguments.quantum",
+                        "1":{
                             "patterns": [
                                 {
-                                    "include": "#options"
+                                    "include": "#punctuation"
                                 }
                             ]
                         }
-                    }
-                    
+                    },
+                    "patterns": [
+                            {
+                                "include": "#options"
+                            }
+                        ]
                 }
             ]
         },
