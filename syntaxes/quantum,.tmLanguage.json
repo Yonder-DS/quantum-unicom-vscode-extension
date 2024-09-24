@@ -228,15 +228,6 @@
                     "name": "arguments.quantum",
                     "begin": "(;|\\+)",
                     "end": "\n",
-                    "captures": {
-                        "1":{
-                            "patterns": [
-                                {
-                                    "include": "#punctuation"
-                                }
-                            ]
-                        }
-                    },
                     "patterns": [
                             {
                                 "include": "#variables"
