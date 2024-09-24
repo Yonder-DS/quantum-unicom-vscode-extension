@@ -11,9 +11,6 @@
             "include": "#comments"
         },
         {
-            "include": "#variables"
-        },
-        {
             "include": "#axes"
         },
         {
@@ -24,6 +21,9 @@
         },
         {
             "include": "#options"
+        },
+        {
+            "include": "#variables"
         },
         {
             "include": "#punctuation"
