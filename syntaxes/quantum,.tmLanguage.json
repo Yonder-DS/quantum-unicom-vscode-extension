@@ -312,7 +312,7 @@
                 {
                     "comment": "codes of column",
                     "name": "string.quantum",
-                    "begin": "('|\\$)",
+                    "begin": "(')",
                     "end": "$1"
                 }
             ]
