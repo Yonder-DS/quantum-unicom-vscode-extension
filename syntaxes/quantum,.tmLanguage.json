@@ -267,7 +267,7 @@
                 }
             ]
         },
-        "columns": {
+        "columnsxx": {
             "patterns": [
                 {
                     "comment": "columns with ()",
@@ -293,7 +293,7 @@
                 }
             ]
         },
-        "codesxx": {
+        "codes": {
             "patterns": [
                 {
                     "comment": "codes of column",
