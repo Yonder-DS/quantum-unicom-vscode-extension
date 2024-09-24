@@ -209,7 +209,7 @@
                     },
                     "patterns": [
                         {
-                            "include": "#column-code-conditions"
+                            "include": "#column-code-values"
                         },
                         {
                             "include": "#variables"
@@ -233,7 +233,7 @@
                                 "include": "#variables"
                             },
                             {
-                                "include": "#column-code-conditions"
+                                "include": "#column-code-values"
                             },
 
                             {
@@ -260,7 +260,7 @@
                 }
             ]
         },
-        "column-code-conditions": {
+        "column-code-values": {
             "patterns": [
                 {
                     "comment": "c= conditions",
