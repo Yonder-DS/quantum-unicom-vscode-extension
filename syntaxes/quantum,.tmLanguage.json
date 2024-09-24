@@ -266,7 +266,7 @@
                     "comment": "c= conditions",
                     "name": "codition.columncode.quantum",
                     "begin": "(c)=",
-                    "end": "(;|\n)",
+                    "end": "(;|\\n)",
                     "beginCaptures": {
                         "1":{
                             "name": "support.function.option.quantum"
