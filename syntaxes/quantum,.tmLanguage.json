@@ -273,8 +273,22 @@
                 {
                     "comment": "c= conditions",
                     "name": "codition.columncode.quantum",
-                    "begin": "c=",
+                    "begin": "(c)=",
                     "end": "(;|\n)",
+                    "beginCaptures": {
+                        "1":{
+                            "name": "support.function.option.quantum"
+                        }
+                    },
+                    "endCaptures": {
+                        "1":{
+                            "patterns": [
+                                {
+                                    "include": "#punctuation"
+                                }
+                            ]
+                        }
+                    },
                     "patterns": [
                         {
                             "include": "#columns"
