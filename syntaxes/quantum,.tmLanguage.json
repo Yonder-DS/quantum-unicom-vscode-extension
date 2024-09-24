@@ -240,7 +240,7 @@
             "patterns": [
                 {
                     "comment": "arguments",
-                    "name": "support.function.arguments.quantum",
+                    "name": "arguments.quantum",
                     "begin": "(;|\\+)",
                     "end": "$",
                     "captures": {
@@ -270,8 +270,7 @@
             "patterns": [
                 {
                     "comment": "options",
-                    "name": "options.quantum",
-                    "match": ";\\s*([^\\s=;]+)",
+                    "match": "(.*)=",
                     "captures": {
                         "1": {
                             "name": "support.function.option.quantum"
@@ -316,6 +315,11 @@
                     "match": ";"
                 },
                 {
+                    "comment": "equal",
+                    "name": "punctuation.equal.quantum",
+                    "match": "="
+                },
+                {
                     "comment": "dollor brackets",
                     "name": "string.dollar.quantum",
                     "match": "[$$]"
@@ -331,22 +335,9 @@
             "patterns": [
                 {
                     "comment": "codes of column",
-                    "name": "string.quoted.single.char.quantum",
-                    "begin": "(b)?(')",
-                    "end": "'",
-                    "beginCaptures": {
-                        "1": {
-                            "name": "string.quoted.byte.raw.quantum"
-                        },
-                        "2": {
-                            "name": "punctuation.definition.char.quantum"
-                        }
-                    },
-                    "endCaptures": {
-                        "0": {
-                            "name": "punctuation.definition.char.quantum"
-                        }
-                    }
+                    "name": "string.quantum",
+                    "begin": "('|$)",
+                    "end": "$1"
                 }
             ]
         }
