@@ -209,7 +209,7 @@
                     },
                     "patterns": [
                         {
-                            "include": "#values"
+                            "include": "#columns"
                         },
                         {
                             "include": "#variables"
@@ -238,9 +238,6 @@
                             },
                             {
                                 "include": "#codes"
-                            },
-                            {
-                                "include": "#values"
                             },
                             {
                                 "include": "#punctuation"
