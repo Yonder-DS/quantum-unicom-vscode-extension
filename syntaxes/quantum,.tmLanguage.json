@@ -51,11 +51,11 @@
             "patterns": [
                 {
                     "comment": "&variables",
-                    "name": "keyword.control.variable.quantum",
+                    "name": "keyword.other.using.operator.variable.quantum",
                     "match": "&([[:alpha:]_]\\w*)",
                     "captures": {
                         "1": {
-                            "name": "support.variable.quantum"
+                            "name": "name.variable.quantum"
                         }
                     }
                 }
