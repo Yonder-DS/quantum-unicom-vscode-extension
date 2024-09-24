@@ -268,7 +268,7 @@
             "patterns": [
                 {
                     "comment": "columns with ()",
-                    "name": "meta.template.expression",
+                    "name": "entity.name.function.preprocessor",
                     "begin": "c\\(",
                     "end": "\\)",
                     "patterns": [
@@ -280,7 +280,7 @@
                 },
                 {
                     "comment": "columns without ()",
-                    "name": "meta.template.expression",
+                    "name": "entity.name.function.preprocessor",
                     "match": "c[a-z]?\\d+"
                 }
             ]
