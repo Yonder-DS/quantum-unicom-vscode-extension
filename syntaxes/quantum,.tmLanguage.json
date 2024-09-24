@@ -94,6 +94,9 @@
                     "patterns": [
                         {
                             "include": "#variables"
+                        },
+                        {
+                            "include": "#options"
                         }
                     ]                    
                 }
