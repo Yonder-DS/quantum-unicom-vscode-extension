@@ -241,8 +241,8 @@
                 {
                     "comment": "arguments",
                     "name": "arguments.section.quantum",
-                    "begin": ";",
-                    "end": "(;|$)",
+                    "begin": "(;|\\+)",
+                    "end": "$",
                     "captures": {
                         "1": {
                             "name": "strong.arguments.quantum",
