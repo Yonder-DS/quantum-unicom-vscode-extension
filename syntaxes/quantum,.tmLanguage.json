@@ -307,6 +307,16 @@
                 }
             ]
         },
+        "codes": {
+            "patterns": [
+                {
+                    "comment": "codes of column",
+                    "name": "string.quantum",
+                    "begin": "('|\n)",
+                    "end": "$1"
+                }
+            ]
+        },
         "punctuation": {
             "patterns": [
                 {
@@ -333,16 +343,6 @@
                     "comment": "single quote brackets",
                     "name": "string.quoted.single.quantum",
                     "match": "['']"
-                }
-            ]
-        },
-        "codes": {
-            "patterns": [
-                {
-                    "comment": "codes of column",
-                    "name": "string.quantum",
-                    "begin": "('|$)",
-                    "end": "$1"
                 }
             ]
         }
