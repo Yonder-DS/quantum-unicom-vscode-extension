@@ -232,6 +232,9 @@
                             {
                                 "include": "#variables"
                             },
+                            {
+                                "include": "#column-code-conditions"
+                            },
 
                             {
                                 "include": "#options"
