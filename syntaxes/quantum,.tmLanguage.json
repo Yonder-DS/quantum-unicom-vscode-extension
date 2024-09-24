@@ -240,7 +240,7 @@
             "patterns": [
                 {
                     "comment": "arguments",
-                    "name": "arguments.section.quantum",
+                    "name": "support.function.arguments.quantum",
                     "begin": "(;|\\+)",
                     "end": "$",
                     "captures": {
@@ -255,7 +255,13 @@
                     "patterns": [
                             {
                                 "include": "#options"
-                            }
+                            },
+                            {
+                                "include": "#variables"
+                            },
+                            {
+                                "include": "#punctuation"
+                            },
                         ]
                 }
             ]
