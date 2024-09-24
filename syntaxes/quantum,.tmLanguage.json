@@ -179,9 +179,10 @@
                     "match": ";\\s*([^\\s=;]+)",
                     "captures": {
                         "1": {
-                            "name": "constant.other.option"
+                            "name": "support.function.option.quantum"
                         }
                     }
+                    
                 }
             ]
         },
@@ -245,12 +246,13 @@
                 }
             ]
         },
-        "codesxx": {
+        "codes": {
             "patterns": [
                 {
-                    "comment": "characters and bytes",
+                    "comment": "codes of column",
                     "name": "string.quoted.single.char.quantum",
                     "begin": "(b)?(')",
+                    "end": "'",
                     "beginCaptures": {
                         "1": {
                             "name": "string.quoted.byte.raw.quantum"
@@ -259,17 +261,11 @@
                             "name": "punctuation.definition.char.quantum"
                         }
                     },
-                    "end": "'",
                     "endCaptures": {
                         "0": {
                             "name": "punctuation.definition.char.quantum"
                         }
-                    },
-                    "patterns": [
-                        {
-                            "include": "#escapes"
-                        }
-                    ]
+                    }
                 }
             ]
         }
