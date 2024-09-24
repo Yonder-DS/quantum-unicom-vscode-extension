@@ -246,6 +246,9 @@
                             },
                             {
                                 "include": "#options"
+                            },
+                            {
+                                "include": "#punctuation"
                             }
                         ]
                 }
