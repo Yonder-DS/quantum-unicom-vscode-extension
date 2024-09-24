@@ -325,6 +325,11 @@
                     "match": "="
                 },
                 {
+                    "comment": "single quote",
+                    "name": "punctuation.single-quote.quantum",
+                    "match": "'"
+                },
+                {
                     "comment": "dollor brackets",
                     "name": "string.dollar.quantum",
                     "match": "$"
