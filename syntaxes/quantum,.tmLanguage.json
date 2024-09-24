@@ -232,9 +232,6 @@
                             {
                                 "include": "#variables"
                             },
-                            {
-                                "include": "#values"
-                            },
 
                             {
                                 "include": "#options"
@@ -270,6 +267,9 @@
                     "patterns": [
                         {
                             "include": "#columns"
+                        },
+                        {
+                            "include": "#codes"
                         }
                     ]
                 }
