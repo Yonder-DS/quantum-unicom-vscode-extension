@@ -249,7 +249,7 @@
                 }
             ]
         },
-        "values": {
+        "valuesxx": {
             "patterns": [
                 {
                     "comment": "= value",
@@ -267,7 +267,7 @@
                 }
             ]
         },
-        "columnsxx": {
+        "columns": {
             "patterns": [
                 {
                     "comment": "columns with ()",
