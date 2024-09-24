@@ -293,7 +293,7 @@
                 }
             ]
         },
-        "codes": {
+        "codesxx": {
             "patterns": [
                 {
                     "comment": "codes of column",
