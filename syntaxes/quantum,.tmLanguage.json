@@ -27,9 +27,6 @@
         },
         {
             "include": "#punctuation"
-        },
-        {
-            "include": "#xx"
         }
     ],
     "repository": {
@@ -228,6 +225,15 @@
                     "name": "support.function.argument.quantum",
                     "begin": "(;|\\+)",
                     "end": "(\\n)",
+                    "beginCaptures": {
+                        "1":{
+                            "patterns": [
+                                {
+                                    "include": "#punctuation"
+                                }
+                            ]
+                        }
+                    },
                     "patterns": [
                             {
                                 "include": "#variables"
