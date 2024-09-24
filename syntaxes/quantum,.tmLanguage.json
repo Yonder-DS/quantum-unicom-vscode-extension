@@ -249,8 +249,8 @@
         "values": {
             "patterns": [
                 {
-                    "comment": "c= conditions",
-                    "name": "codition.columncode.quantum",
+                    "comment": "= value",
+                    "name": "entity.name.label.value.quantum",
                     "begin": "=",
                     "end": "(;|\\n)",
                     "patterns": [
