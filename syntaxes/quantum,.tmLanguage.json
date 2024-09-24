@@ -242,13 +242,13 @@
                                 "include": "#variables"
                             },
                             {
+                                "include": "#column-code-conditions"
+                            },
+                            {
                                 "include": "#options"
                             },
                             {
                                 "include": "#punctuation"
-                            },
-                            {
-                                "include": "#column-code-conditions"
                             }
                         ]
                 }
