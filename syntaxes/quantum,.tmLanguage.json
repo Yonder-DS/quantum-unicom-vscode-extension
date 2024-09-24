@@ -268,7 +268,7 @@
             "patterns": [
                 {
                     "comment": "columns with ()",
-                    "name": "meta.type.new.expr.column.qunatum",
+                    "name": "meta.template.expression",
                     "begin": "c\\(",
                     "end": "\\)",
                     "patterns": [
@@ -280,7 +280,7 @@
                 },
                 {
                     "comment": "columns without ()",
-                    "name": "meta.type.new.expr.column.qunatum",
+                    "name": "meta.template.expression",
                     "match": "c[a-z]?\\d+"
                 }
             ]
