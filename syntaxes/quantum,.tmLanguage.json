@@ -167,10 +167,10 @@
                             "include": "#column-code-conditions"
                         },
                         {
-                            "include": "#options"
+                            "include": "#variables"
                         },
                         {
-                            "include": "#variables"
+                            "include": "#options"
                         }
                     ]
                 }
