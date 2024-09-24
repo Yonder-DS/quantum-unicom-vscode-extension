@@ -178,7 +178,7 @@
                             "name": "keyword.control.define.quantum"
                         },
                         "2": {
-                            "name": "support.function.option.quantum"
+                            "name": "support.function.argument.quantum"
                         }
                     },
                     "patterns": [
@@ -225,7 +225,7 @@
             "patterns": [
                 {
                     "comment": "arguments",
-                    "name": "strong.arguments.quantum",
+                    "name": "support.function.argument.quantum",
                     "begin": "(;|\\+)",
                     "end": "(\\n)",
                     "patterns": [
@@ -234,26 +234,12 @@
                             },
 
                             {
-                                "include": "#options"
+                                "include": "#columns"
                             },
                             {
                                 "include": "#punctuation"
                             }
                         ]
-                }
-            ]
-        },
-        "options": {
-            "patterns": [
-                {
-                    "comment": "options",
-                    "match": ";[[:blank:]]*([^=;\\n]+)",
-                    "captures": {
-                        "1": {
-                            "name": "support.function.option.quantum"
-                        }
-                    }
-                    
                 }
             ]
         },
@@ -300,9 +286,13 @@
             "patterns": [
                 {
                     "comment": "codes of column",
-                    "name": "string.quantum",
-                    "begin": "'",
-                    "end": "'"
+                    "name": "string.single.quote.quantum",
+                    "match": "'[0-9\\/]*'"
+                },
+                {
+                    "comment": "code strings of column",
+                    "name": "string.dollor.quantum",
+                    "match": "$.*$"
                 }
             ]
         },
@@ -326,12 +316,7 @@
                 {
                     "comment": "dollor brackets",
                     "name": "string.dollar.quantum",
-                    "match": "[$$]"
-                },
-                {
-                    "comment": "single quote brackets",
-                    "name": "string.quoted.single.quantum",
-                    "match": "['']"
+                    "match": "$"
                 }
             ]
         }
