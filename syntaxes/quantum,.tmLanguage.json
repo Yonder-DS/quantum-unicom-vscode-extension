@@ -326,7 +326,7 @@
                 },
                 {
                     "comment": "single quote",
-                    "name": "punctuation.single-quote.quantum",
+                    "name": "keyword.operator.punctuation.single.quantum",
                     "match": "'"
                 },
                 {
