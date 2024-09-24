@@ -281,7 +281,7 @@
                 {
                     "comment": "columns without ()",
                     "name": "meta.definition.variable.name",
-                    "match": "c[a-z]?\\d+"
+                    "match": "c[a-z]?[0-9]{3,4}"
                 },
                 {
                     "comment": "columns value",
