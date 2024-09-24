@@ -312,8 +312,8 @@
                 {
                     "comment": "codes of column",
                     "name": "string.quantum",
-                    "begin": "(')",
-                    "end": "$1"
+                    "begin": "'",
+                    "end": "'"
                 }
             ]
         },
