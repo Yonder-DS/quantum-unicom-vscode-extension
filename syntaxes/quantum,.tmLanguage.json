@@ -51,7 +51,7 @@
             "patterns": [
                 {
                     "comment": "&variables",
-                    "name": "type.variable.quantum",
+                    "name": "keyword.control.variable.quantum",
                     "match": "&([[:alpha:]_]\\w*)",
                     "captures": {
                         "1": {
