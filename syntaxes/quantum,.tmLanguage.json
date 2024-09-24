@@ -209,7 +209,7 @@
                     },
                     "patterns": [
                         {
-                            "include": "#column-code-values"
+                            "include": "#values"
                         },
                         {
                             "include": "#variables"
@@ -233,7 +233,7 @@
                                 "include": "#variables"
                             },
                             {
-                                "include": "#column-code-values"
+                                "include": "#values"
                             },
 
                             {
@@ -260,18 +260,13 @@
                 }
             ]
         },
-        "column-code-values": {
+        "values": {
             "patterns": [
                 {
                     "comment": "c= conditions",
                     "name": "codition.columncode.quantum",
-                    "begin": "(c)=",
+                    "begin": "=",
                     "end": "(;|\\n)",
-                    "beginCaptures": {
-                        "1":{
-                            "name": "support.function.option.quantum"
-                        }
-                    },
                     "patterns": [
                         {
                             "include": "#columns"
