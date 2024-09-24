@@ -52,7 +52,7 @@
                 {
                     "comment": "&variables",
                     "name": "type.variable.quantum",
-                    "match": "&(\\b([[:alpha:]_]\\w*)\\b)",
+                    "match": "&([[:alpha:]_]\\w*)",
                     "captures": {
                         "1": {
                             "name": "support.variable.quantum"
