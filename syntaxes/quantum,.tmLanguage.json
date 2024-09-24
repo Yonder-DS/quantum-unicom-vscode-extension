@@ -152,7 +152,8 @@
                 {
                     "comment": "define variables",
                     "name": "define.quantum",
-                    "match": "^(\\*def)\\s([[:alpha:]_]\\w*).*$",
+                    "begin": "^(\\*def)\\s([[:alpha:]_]\\w*)",
+                    "end": "$",
                     "captures": {
                         "1": {
                             "name": "keyword.control.define.quantum"
