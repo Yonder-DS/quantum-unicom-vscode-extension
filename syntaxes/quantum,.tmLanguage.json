@@ -225,7 +225,7 @@
             "patterns": [
                 {
                     "comment": "arguments",
-                    "name": "arguments.quantum",
+                    "name": "strong.arguments.quantum",
                     "begin": "(;|\\+)",
                     "end": "(;|\n)",
                     "patterns": [
