@@ -98,15 +98,18 @@
             "patterns": [
                 {
                     "name": "text.quantum",
-                    "match": "^\\b(ttl|ttc|ttr|ttg|ttn)(.*)$",
+                    "begin": "^\\b(ttl|ttc|ttr|ttg|ttn)",
+                    "end": "$",
                     "captures": {
                         "1": {
                             "name": "keyword.text.quantum"
-                        },
-                        "2": {
-                            "name": "text.value.quantum"
                         }
-                    }
+                    },
+                    "patterns": [
+                        {
+                            "include": "#variables"
+                        }
+                    ]
                 }
             ]
         },
