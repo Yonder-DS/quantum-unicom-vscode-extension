@@ -227,7 +227,7 @@
                     "comment": "arguments",
                     "name": "strong.arguments.quantum",
                     "begin": "(;|\\+)",
-                    "end": "(;|\n)",
+                    "end": "(\\n)",
                     "patterns": [
                             {
                                 "include": "#variables"
