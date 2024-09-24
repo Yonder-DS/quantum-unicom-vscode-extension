@@ -249,7 +249,7 @@
             "patterns": [
                 {
                     "comment": "options",
-                    "match": ";\\s*([^=;\n]+)",
+                    "match": ";[[:blank:]]*([^=;\n]+)",
                     "captures": {
                         "1": {
                             "name": "support.function.option.quantum"
