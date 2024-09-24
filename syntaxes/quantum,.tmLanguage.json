@@ -147,6 +147,31 @@
                 }
             ]
         },
+        "definitions": {
+            "patterns": [
+                {
+                    "comment": "define variables",
+                    "name": "define.quantum",
+                    "match": "^(\\*def)\\s([[:alpha:]_]\\w*).*$",
+                    "captures": {
+                        "1": {
+                            "name": "keyword.control.define.quantum"
+                        },
+                        "2": {
+                            "name": "support.function.option.quantum"
+                        }
+                    },
+                    "patterns": [
+                        {
+                            "include": "#variables"
+                        },
+                        {
+                            "include": "#options"
+                        }
+                    ]                    
+                }
+            ]
+        },
         "include-files": {
             "patterns": [
                 {
@@ -225,20 +250,6 @@
                     "comment": "columns without ()",
                     "name": "entity.name.function",
                     "match": "c[a-z]?\\d+"
-                }
-            ]
-        },
-        "definitions": {
-            "patterns": [
-                {
-                    "comment": "define variables",
-                    "name": "define.quantum",
-                    "match": "^(\\*def).*$",
-                    "captures": {
-                        "1": {
-                            "name": "keyword.control.define.quantum"
-                        }
-                    }
                 }
             ]
         },
