@@ -11,6 +11,9 @@
             "include": "#comments"
         },
         {
+            "include": "#variables"
+        },
+        {
             "include": "#axes"
         },
         {
@@ -39,6 +42,20 @@
                     "captures": {
                         "1": {
                             "name": "punctuation.definition.comment.quantum"
+                        }
+                    }
+                }
+            ]
+        },
+        "variables": {
+            "patterns": [
+                {
+                    "comment": "&variables",
+                    "name": "type.variable.quantum",
+                    "match": "&(\\b([[:alpha:]_]\\w*)\\b)",
+                    "captures": {
+                        "1": {
+                            "name": "support.variable.quantum"
                         }
                     }
                 }
