@@ -82,7 +82,7 @@
                 {
                     "comment": "l statement",
                     "name": "label.statement.quantum",
-                    "match": "^(l)\\s(\\b([[:alpha:]_]\\w*)\\b)",
+                    "match": "^(l)[[:blank:]](\\b([[:alpha:]_]\\w*)\\b)",
                     "captures": {
                         "1": {
                             "name": "storage.type.lstatement.quantum"
@@ -171,7 +171,7 @@
                 {
                     "comment": "define variables",
                     "name": "define.quantum",
-                    "begin": "^(\\*def)\\s([[:alpha:]_]\\w*)",
+                    "begin": "^(\\*def)[[:blank:]]([[:alpha:]_]\\w*)",
                     "end": "$",
                     "captures": {
                         "1": {
@@ -197,7 +197,7 @@
                 {
                     "comment": "include files",
                     "name": "include.quantum",
-                    "begin": "^(\\*include)\\s+([^\\s;]+)",
+                    "begin": "^(\\*include)[[:blank:]]+([^[[:blank:]];]+)",
                     "end": "$",
                     "beginCaptures": {
                         "1": {
