@@ -309,7 +309,7 @@
                     "end": "\\)",
                     "patterns": [
                         {
-                            "name": "column.separator.quantum",
+                            "name": "keyword.operator.column.separator.quantum",
                             "match": "(,)"
                         }
                     ]
