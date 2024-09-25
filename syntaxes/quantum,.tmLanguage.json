@@ -280,6 +280,9 @@
                     "end": "(?=$|;)",
                     "patterns": [
                         {
+                            "include": "#variables"
+                        },
+                        {
                             "include": "#codes"
                         },
                         {
