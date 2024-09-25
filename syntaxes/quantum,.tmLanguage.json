@@ -263,7 +263,7 @@
                 {
                     "comment": "options ",
                     "name": "invalid",
-                    "match": "(?=\\+|;)[^=;]*"
+                    "match": "(?=\\+|;)[^=;]+"
                 }
             ]
         },
