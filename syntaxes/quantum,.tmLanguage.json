@@ -273,10 +273,10 @@
                             "include": "#variables"
                         },
                         {
-                            "include": "#codes"
+                            "include": "#columns"
                         },
                         {
-                            "include": "#columns"
+                            "include": "#codes"
                         }
                     ]
                 }
@@ -286,7 +286,7 @@
             "patterns": [
                 {
                     "comment": "columns with ()",
-                    "name": "meta.definition.variable.name",
+                    "name": "meta.definition.variable.name.column.quantum",
                     "begin": "c\\(",
                     "end": "\\)",
                     "patterns": [
@@ -298,12 +298,12 @@
                 },
                 {
                     "comment": "columns without ()",
-                    "name": "meta.definition.variable.name",
+                    "name": "meta.definition.variable.name.column.quantum",
                     "match": "c[a-z]?[0-9]{3,4}"
                 },
                 {
                     "comment": "columns value",
-                    "name": "meta.definition.variable.name",
+                    "name": "meta.definition.variable.name.column.quantum",
                     "match": "[0-9]{3,4}"
                 }
             ]
