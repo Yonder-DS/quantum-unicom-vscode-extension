@@ -154,7 +154,7 @@
                     "comment": "axes numeric statements",
                     "name": "axes.statement.numeric.quantum",
                     "begin": "^\\b(col|val|fld)",
-                    "end": "(?=(\\+.*$))",
+                    "end": "$",
                     "beginCaptures": {
                         "1": {
                             "name": "keyword.numeric-statement.quantum"
