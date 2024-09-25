@@ -128,7 +128,7 @@
                         "name": "text.value.quantum",
                         "match": "(?=(.{80}))(.*)(?<=([;\n]))",
                         "captures": {
-                            "2":{
+                            "3":{
                                 "name": "invalid"
                             }
                         }
