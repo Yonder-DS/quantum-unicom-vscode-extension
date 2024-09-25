@@ -201,7 +201,7 @@
                             "name": "keyword.control.include.quantum"
                         },
                         "2":{
-                            "name":"include.file-name.quantum"
+                            "name":"markup.underline.link"
                         }
                     },
                     "patterns": [
