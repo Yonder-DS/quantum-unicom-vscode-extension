@@ -129,9 +129,14 @@
                         "match": "(.{80})([^;\\n]*)",
                         "captures": {
                             "2":{
-                                "name": "invalid"
+                                "name": "invalid.illegal.text-length.quantum"
                             }
-                        }
+                        },
+                        "patterns": [
+                            {
+                                "include": "#variables"
+                            }
+                        ]
                         },
                         {
                             "include": "#variables"
