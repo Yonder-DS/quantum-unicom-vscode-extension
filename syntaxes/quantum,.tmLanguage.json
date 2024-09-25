@@ -259,17 +259,8 @@
             "patterns": [
                 {
                     "comment": "options ",
-                    "name": "entity.name.label.value.quantum",
-                    "begin": "=",
-                    "end": "(;)",
-                    "patterns": [
-                        {
-                            "include": "#codes"
-                        },
-                        {
-                            "include": "#columns"
-                        }
-                    ]
+                    "name": "invalid",
+                    "match": "(?=\\+|;).*(?==|;)"
                 }
             ]
         },
@@ -286,10 +277,6 @@
                         },
                         {
                             "include": "#columns"
-                        },
-                        {
-                            "name": "punctuation.semi.quantum",
-                            "match": "(;)"
                         }
                     ]
                 }
