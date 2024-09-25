@@ -125,11 +125,8 @@
                     },
                     "patterns": [
                         {
-                            "include": "#variables"
-                        },
-                        {
                         "name": "text.value.quantum",
-                        "match": "(?=(.{80}))([^;\\n]*)",
+                        "match": "(.{80})([^;\\n]*)",
                         "patterns": [
                             {
                                 "include": "#variables"
