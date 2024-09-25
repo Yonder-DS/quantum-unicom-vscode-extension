@@ -329,17 +329,17 @@
             "patterns": [
                 {
                     "comment": ".operator.",
-                    "name": "keyword.control.logical.operator.$1.quantum",
+                    "name": "entity.name.type.logical.operator.$1.quantum",
                     "match": "\\.(eq|gt|ge|lt|le|ne|in|and|or|xor|not)\\."
                 },
                 {
                     "comment": "operator ()",
-                    "name": "keyword.control.logical.operator.$1.quantum",
+                    "name": "entity.name.type.logical.operator.$1.quantum",
                     "match": "(and|or|xor|not)(?<=\\()"
                 },
                 {
                     "comment": "operator n u",
-                    "name": "keyword.control.logical.operator.unequal.quantum",
+                    "name": "entity.name.type.logical.operator.unequal.quantum",
                     "match": "(?<=\\w)[nu](?=')"
                 }
             ]
