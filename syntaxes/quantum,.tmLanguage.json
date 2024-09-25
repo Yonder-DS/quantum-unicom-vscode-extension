@@ -222,7 +222,7 @@
             "patterns": [
                 {
                     "comment": "arguments",
-                    "name": "support.function.argument.quantum",
+                    "name": "argument.quantum",
                     "begin": "(;|\\+)",
                     "end": "(\\n)",
                     "beginCaptures": {
@@ -262,7 +262,7 @@
             "patterns": [
                 {
                     "comment": "options ",
-                    "name": "invalid",
+                    "name": "support.function.option.quantum",
                     "match": "(?<=\\+|;)[^=;\\n]+"
                 }
             ]
