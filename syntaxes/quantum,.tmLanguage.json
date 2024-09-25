@@ -247,16 +247,6 @@
                             },
                             {
                                 "include": "#values"
-                            },
-
-                            {
-                                "include": "#columns"
-                            },
-                            {
-                                "include": "#codes"
-                            },
-                            {
-                                "include": "#punctuation"
                             }
                         ]
                 }
