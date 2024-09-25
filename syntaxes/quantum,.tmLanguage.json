@@ -127,16 +127,16 @@
                         {
                         "name": "text.value.quantum",
                         "match": "(?=.{80})([^;\\n]*)",
-                        "captures": {
-                            "1":{
-                                "name": "invalid.text-length.quantum"
-                            }
-                        },
                         "patterns": [
                             {
                                 "include": "#variables"
                             }
-                        ]
+                        ],
+                        "captures": {
+                            "1":{
+                                "name": "invalid.text-length.quantum"
+                            }
+                        }
                         },
                         {
                             "include": "#variables"
