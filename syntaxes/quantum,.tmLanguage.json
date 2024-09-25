@@ -240,10 +240,10 @@
                     },
                     "patterns": [
                             {
-                                "include": "#options"
+                                "include": "#variables"
                             },
                             {
-                                "include": "#variables"
+                                "include": "#options"
                             },
                             {
                                 "include": "#values"
