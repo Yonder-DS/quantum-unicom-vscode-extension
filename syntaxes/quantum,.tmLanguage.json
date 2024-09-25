@@ -256,7 +256,7 @@
             "patterns": [
                 {
                     "comment": "options ",
-                    "name": "constant.other.option.quantum",
+                    "name": "support.function.option.quantum",
                     "match": "(?<=\\+|;)[^=;\\n]+"
                 }
             ]
