@@ -115,7 +115,7 @@
         "texts": {
             "patterns": [
                 {
-                    "name": "text.quantum",
+                    "name": "text.$1.quantum",
                     "begin": "^\\b(ttl|ttc|ttr|ttg|ttn|BOT)",
                     "end": "$",
                     "beginCaptures": {
@@ -126,7 +126,7 @@
                     "patterns": [
                         {
                         "name": "text.value.quantum",
-                        "match": "(?=($1{80}))(.*)(?<=([;\n]))",
+                        "match": "(?=(.{80}))(.*)(?<=([;\n]))",
                         "captures": {
                             "1":{
                                 "name": "invalid"
