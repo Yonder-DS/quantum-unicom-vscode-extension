@@ -125,21 +125,28 @@
                     },
                     "patterns": [
                         {
-                        "name": "text.value.quantum",
-                        "match": "(.{80})([^;\\n]*)",
-                        "patterns": [
-                            {
-                                "include": "#variables"
-                            }
-                        ],
-                        "captures": {
-                            "2":{
-                                "name": "invalid.text-length.quantum"
-                            }
-                        }
+                            "include": "#text-values"
                         },
                         {
                             "include": "#arguments"
+                        }
+                    ]
+                }
+            ]
+        },
+        "text-values":{
+            "patterns": [
+                {
+                    "name": "text.value.quantum",
+                    "begin": ".",
+                    "end": "(;|\\n)",
+                    "patterns": [
+                        {
+                            "include": "#variables"
+                        },
+                        {
+                            "name":"invalid.text-length.quantum",
+                            "match": "(?=.{80})([^;\\n]*)"
                         }
                     ]
                 }
