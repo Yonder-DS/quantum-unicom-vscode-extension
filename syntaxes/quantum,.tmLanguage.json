@@ -239,6 +239,9 @@
                                 "include": "#variables"
                             },
                             {
+                                "include": "#options"
+                            },
+                            {
                                 "include": "#values"
                             },
 
