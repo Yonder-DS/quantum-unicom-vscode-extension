@@ -118,12 +118,21 @@
                     "name": "text.quantum",
                     "begin": "^\\b(ttl|ttc|ttr|ttg|ttn|BOT)",
                     "end": "$",
-                    "captures": {
+                    "beginCaptures": {
                         "1": {
                             "name": "keyword.text.$1.quantum"
                         }
                     },
                     "patterns": [
+                        {
+                        "name": "text.value.quantum",
+                        "match": "(?=($1{80}))(.*)(?<=([;\n]))",
+                        "captures": {
+                            "1":{
+                                "name": "invalid"
+                            }
+                        }
+                        },
                         {
                             "include": "#variables"
                         },
