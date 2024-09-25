@@ -125,6 +125,9 @@
                     },
                     "patterns": [
                         {
+                            "include": "#variables"
+                        },
+                        {
                         "name": "text.value.quantum",
                         "match": "(.{80})([^;\\n]*)",
                         "patterns": [
@@ -137,9 +140,6 @@
                                 "name": "invalid.text-length.quantum"
                             }
                         }
-                        },
-                        {
-                            "include": "#variables"
                         },
                         {
                             "include": "#arguments"
