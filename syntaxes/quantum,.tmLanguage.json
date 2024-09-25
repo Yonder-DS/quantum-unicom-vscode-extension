@@ -14,6 +14,9 @@
             "include": "#variables"
         },
         {
+            "include": "#statements"
+        },
+        {
             "include": "#axes"
         },
         {
@@ -58,6 +61,15 @@
                 }
             ]
         },
+        "statements": {
+            "patterns": [
+                {
+                    "comment": "struct, a, ed statements begin",
+                    "name": "storage.type.$1.quantum",
+                    "match": "^((struct)|a|ed|end)"
+                }
+            ]
+        },
         "axes": {
             "patterns": [
                 {
@@ -83,10 +95,10 @@
                     "end": "$",
                     "beginCaptures": {
                         "1": {
-                            "name": "storage.type.lstatement.quantum"
+                            "name": "storage.type.$1.quantum"
                         },
                         "2": {
-                            "name": "variable.lstatement.quantum"
+                            "name": "variable.name.$1.quantum"
                         }
                     },
                     "patterns": [
@@ -104,16 +116,19 @@
             "patterns": [
                 {
                     "name": "text.quantum",
-                    "begin": "^\\b(ttl|ttc|ttr|ttg|ttn)",
+                    "begin": "^\\b(ttl|ttc|ttr|ttg|ttn|BOT)",
                     "end": "$",
                     "captures": {
                         "1": {
-                            "name": "keyword.text.quantum"
+                            "name": "keyword.text.$1.quantum"
                         }
                     },
                     "patterns": [
                         {
                             "include": "#variables"
+                        },
+                        {
+                            "include": "#arguments"
                         }
                     ]
                 }
