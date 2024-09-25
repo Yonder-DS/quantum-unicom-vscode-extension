@@ -238,6 +238,9 @@
                             {
                                 "include": "#variables"
                             },
+                            {
+                                "include": "#values"
+                            },
 
                             {
                                 "include": "#columns"
