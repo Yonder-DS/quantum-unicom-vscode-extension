@@ -266,7 +266,7 @@
                     "patterns": [
                         {
                             "comment": "basic-options",
-                            "name": "storage.type.basic-option.quantum",
+                            "name": "storage.type.option.basic.quantum",
                             "match": "(?<=\\W)(c|col\\([[:alpha:]]\\))(?=\\W)"
                         }
                     ]
@@ -291,7 +291,7 @@
                             "include": "#codes"
                         },
                         {
-                            "include": "#logical-operators"
+                            "include": "#operators"
                         },
                         {
                             "include": "#numbers"
@@ -340,22 +340,27 @@
                 }
             ]
         },
-        "logical-operators": {
+        "operators": {
             "patterns": [
                 {
-                    "comment": ".operator.",
-                    "name": "entity.name.type.logical.operator.$1.quantum",
+                    "comment": "logical .operator.",
+                    "name": "entity.name.type.operator.logical.$1.quantum",
                     "match": "\\.(eq|gt|ge|lt|le|ne|in|and|or|xor|not)\\."
                 },
                 {
-                    "comment": "operator ()",
-                    "name": "entity.name.type.logical.operator.$1.quantum",
+                    "comment": "logical operator ()",
+                    "name": "entity.name.type.operator.logical.$1.quantum",
                     "match": "(and|or|xor|not)(?<=\\()"
                 },
                 {
-                    "comment": "operator n u",
-                    "name": "entity.name.type.logical.operator.unequal.quantum",
+                    "comment": "logical operator n u",
+                    "name": "entity.name.type.operator.logical.unequal.quantum",
                     "match": "(?<=\\w)[nu](?=')"
+                },
+                {
+                    "comment": "arithmetic operators",
+                    "name": "entity.name.type.operator.arithmetic.quantum",
+                    "match": "(\\+|-|\\*|/)"
                 }
             ]
         },
