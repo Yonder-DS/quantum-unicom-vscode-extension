@@ -277,6 +277,9 @@
                         },
                         {
                             "include": "#codes"
+                        },
+                        {
+                            "include": "#logical-operators"
                         }
                     ]
                 }
@@ -319,6 +322,20 @@
                     "comment": "code strings of column",
                     "name": "string.dollor.quantum",
                     "match": "$.*$"
+                }
+            ]
+        },
+        "logical-operators": {
+            "patterns": [
+                {
+                    "comment": ".operator.",
+                    "name": "string.regexp.logical.operator.$1.quantum",
+                    "match": "\\.?(eq|gt|ge|lt|le|ne|and|or|xor|not)\\.?"
+                },
+                {
+                    "comment": "operator n u",
+                    "name": "string.regexp.logical.operator.unequal.quantum",
+                    "match": "(?<=\\W)[nu](?=\\W)"
                 }
             ]
         },
