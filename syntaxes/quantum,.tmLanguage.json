@@ -79,8 +79,9 @@
                 {
                     "comment": "l statement",
                     "name": "label.statement.quantum",
-                    "match": "^(l)[[:blank:]](\\b([[:alpha:]_]\\w*)\\b)",
-                    "captures": {
+                    "begin": "^(l)[[:blank:]](\\b([[:alpha:]_]\\w*)\\b)",
+                    "end": "$",
+                    "beginCaptures": {
                         "1": {
                             "name": "storage.type.lstatement.quantum"
                         },
@@ -91,6 +92,9 @@
                     "patterns": [
                         {
                             "include": "#variables"
+                        },
+                        {
+                            "include": "#arguments"
                         }
                     ]                    
                 }
