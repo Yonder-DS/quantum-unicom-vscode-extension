@@ -321,7 +321,7 @@
                 {
                     "comment": "code strings of column",
                     "name": "string.dollor.quantum",
-                    "match": "$.*$"
+                    "match": "\\$.*\\$"
                 }
             ]
         },
