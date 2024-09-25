@@ -262,7 +262,14 @@
                     "comment": "options ",
                     "name": "support.function.option.quantum",
                     "begin": "(?<=\\+|;)",
-                    "end": "(?=[=;\\n])"
+                    "end": "(?=[=;\\n])",
+                    "patterns": [
+                        {
+                            "comment": "basic-options",
+                            "name": "storage.type.basic-option.quantum",
+                            "match": "(?<=\\W)(c|col\\([[:alpha:]]\\))(?=\\W)"
+                        }
+                    ]
                 }
             ]
         },
