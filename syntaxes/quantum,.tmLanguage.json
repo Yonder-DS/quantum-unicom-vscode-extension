@@ -252,13 +252,31 @@
                 }
             ]
         },
+        "options": {
+            "patterns": [
+                {
+                    "comment": "options ",
+                    "name": "entity.name.label.value.quantum",
+                    "begin": "=",
+                    "end": "(;)",
+                    "patterns": [
+                        {
+                            "include": "#codes"
+                        },
+                        {
+                            "include": "#columns"
+                        }
+                    ]
+                }
+            ]
+        },
         "values": {
             "patterns": [
                 {
                     "comment": "= value",
                     "name": "entity.name.label.value.quantum",
-                    "begin": "=",
-                    "end": "(;)",
+                    "begin": "(?==)",
+                    "end": "(?=$|;)",
                     "patterns": [
                         {
                             "include": "#codes"
