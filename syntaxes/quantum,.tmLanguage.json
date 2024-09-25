@@ -280,6 +280,9 @@
                         },
                         {
                             "include": "#logical-operators"
+                        },
+                        {
+                            "include": "#numbers"
                         }
                     ]
                 }
@@ -306,7 +309,7 @@
                 },
                 {
                     "comment": "columns value",
-                    "name": "meta.definition.variable.name.column.quantum",
+                    "name": "meta.definition.variable.name.column.number.quantum",
                     "match": "[0-9]{3,4}"
                 }
             ]
@@ -341,6 +344,15 @@
                     "comment": "operator n u",
                     "name": "entity.name.type.logical.operator.unequal.quantum",
                     "match": "(?<=\\w)[nu](?=')"
+                }
+            ]
+        },
+        "numbers":{
+            "patterns": [
+                {
+                    "comment": "any numbers",
+                    "name":"meta.definition.variable.name.other.number.quantum",
+                    "match": "[0-9]+"
                 }
             ]
         },
