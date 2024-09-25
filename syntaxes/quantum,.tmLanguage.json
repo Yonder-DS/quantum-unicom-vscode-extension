@@ -261,7 +261,8 @@
                 {
                     "comment": "options ",
                     "name": "support.function.option.quantum",
-                    "match": "(?<=\\+|;)[^=;\\n]+"
+                    "begin": "(?<=\\+|;)",
+                    "end": "(?=[=;\\n])"
                 }
             ]
         },
