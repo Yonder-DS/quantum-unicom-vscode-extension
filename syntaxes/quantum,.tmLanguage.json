@@ -153,8 +153,9 @@
                 {
                     "comment": "axes numeric statements",
                     "name": "axes.statement.numeric.quantum",
-                    "match": "^\\b(col|val|fld).*(\\n\\+.*)*",
-                    "captures": {
+                    "begin": "^\\b(col|val|fld)",
+                    "end": "(?=(\\+.*$))",
+                    "beginCaptures": {
                         "1": {
                             "name": "keyword.numeric-statement.quantum"
                         }
@@ -162,6 +163,9 @@
                     "patterns": [
                         {
                             "include": "#arguments"
+                        },
+                        {
+                            "include": "#columns"
                         }
                     ]
                 }
