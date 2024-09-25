@@ -236,10 +236,10 @@
                     },
                     "patterns": [
                             {
-                                "include": "#variables"
+                                "include": "#options"
                             },
                             {
-                                "include": "#options"
+                                "include": "#variables"
                             },
                             {
                                 "include": "#values"
@@ -263,7 +263,7 @@
                 {
                     "comment": "options ",
                     "name": "invalid",
-                    "match": "(?=\\+|;)[^=;]+"
+                    "match": "(?<=\\+|;)[^=;\\n]+"
                 }
             ]
         },
