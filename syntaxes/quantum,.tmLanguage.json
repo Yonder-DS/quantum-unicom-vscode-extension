@@ -286,6 +286,10 @@
                         },
                         {
                             "include": "#columns"
+                        },
+                        {
+                            "name": "punctuation.semi.quantum",
+                            "match": "(;)"
                         }
                     ]
                 }
