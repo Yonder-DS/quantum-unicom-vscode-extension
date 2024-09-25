@@ -330,7 +330,7 @@
                 {
                     "comment": ".operator.",
                     "name": "string.regexp.logical.operator.$1.quantum",
-                    "match": "\\.(eq|gt|ge|lt|le|ne|and|or|xor|not)\\."
+                    "match": "\\.(eq|gt|ge|lt|le|ne|in|and|or|xor|not)\\."
                 },
                 {
                     "comment": "operator ()",
