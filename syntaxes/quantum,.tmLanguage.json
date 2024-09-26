@@ -139,7 +139,7 @@
                 {
                     "name": "text.value.quantum",
                     "begin": ".{1}",
-                    "end": ";|\\n",
+                    "end": "(;|\\n)",
                     "patterns": [
                         {
                             "include": "#variables"
