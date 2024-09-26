@@ -146,7 +146,7 @@
                         },
                         {
                             "name":"invalid.text-length.quantum",
-                            "match": "(?<=^.{123})([^;\\n]+)"
+                            "match": "(?<=^.{120})([^;\\n]*)"
                         }
                     ]
                 }
