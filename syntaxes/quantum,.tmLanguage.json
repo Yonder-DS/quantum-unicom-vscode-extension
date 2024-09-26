@@ -138,7 +138,7 @@
             "patterns": [
                 {
                     "name": "text.value.quantum",
-                    "begin": ".",
+                    "begin": "^",
                     "end": "[;\\n]",
                     "patterns": [
                         {
