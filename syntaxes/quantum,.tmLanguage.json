@@ -264,7 +264,7 @@
                 {
                     "comment": "arguments",
                     "name": "argument.quantum",
-                    "begin": "(;|\\+)",
+                    "begin": "(;|\\+|(\\;%))",
                     "end": "(\\n)",
                     "beginCaptures": {
                         "1":{
@@ -301,6 +301,9 @@
                             "comment": "basic-options",
                             "name": "storage.type.option.basic.quantum",
                             "match": "(?<=\\W)(c|col\\([[:alpha:]]\\))(?=\\W)"
+                        },
+                        {
+                            "include": "#variables"
                         }
                     ]
                 }
