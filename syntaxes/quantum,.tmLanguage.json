@@ -402,7 +402,7 @@
                 {
                     "comment": "any numbers",
                     "name":"meta.definition.variable.name.other.number.quantum",
-                    "match": "(?<==)[0-9]+"
+                    "match": "(?<==.,:)[0-9]+"
                 }
             ]
         },
