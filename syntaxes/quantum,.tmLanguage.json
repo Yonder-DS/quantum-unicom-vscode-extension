@@ -22,7 +22,7 @@
                 {
                     "comment": "Comands for edit section",
                     "name": "keyword.edit-command.quantum",
-                    "match": "(count|lista?|filedef|report)"
+                    "match": "(call|fetch|count|lista?|filedef|report)"
                 }
             ]
         },
