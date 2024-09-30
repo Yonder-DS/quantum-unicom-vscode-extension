@@ -8,6 +8,9 @@
     "scopeName": "source.quantum",
     "patterns": [
         {
+            "include": "#edit-commands"
+        },
+        {
             "include": "#comments"
         },
         {
@@ -33,6 +36,16 @@
         }
     ],
     "repository": {
+        
+        "edit-commands": {
+            "patterns": [
+                {
+                    "comment": "Comands for edit section",
+                    "name": "keyword.edit-command.quantum",
+                    "match": "(count|list[a]|filedef|report|write)"
+                }
+            ]
+        },
         "comments": {
             "patterns": [
                 {
