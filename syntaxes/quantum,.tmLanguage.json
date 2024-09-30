@@ -156,7 +156,7 @@
                 {
                     "comment": "axes n statements",
                     "name": "axes.statement.$1.quantum",
-                    "begin": "^\\b(n[0-9]{2}|m)([^;]*)",
+                    "begin": "^\\b(n[0-9]{2}|m|side)([^;]*)",
                     "end": "$",
                     "captures": {
                         "1": { "name": "keyword.basic-statement.$1.quantum" },
