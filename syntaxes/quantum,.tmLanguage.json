@@ -354,7 +354,7 @@
                 {
                     "comment": "logical operator n u",
                     "name": "entity.name.type.operator.logical.unequal.quantum",
-                    "match": "(?<=\\w)[nu](?=')"
+                    "match": "(?<=(\\w|\\)))[nu](?=('|\\$))"
                 },
                 {
                     "comment": "arithmetic operators",
