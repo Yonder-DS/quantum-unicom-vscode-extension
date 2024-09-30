@@ -7,7 +7,7 @@
     ],
     "scopeName": "source.quantum",
     "patterns": [
-        { "include": "#statements" },
+        { "include": "#sections" },
         { "include": "#comments" },
         { "include": "#variables" },
         { "include": "#axes" },
@@ -17,15 +17,6 @@
         { "include": "#punctuation" }
     ],
     "repository": {
-        "edit-commands": {
-            "patterns": [
-                {
-                    "comment": "Comands for edit section",
-                    "name": "keyword.edit-command.quantum",
-                    "match": "(call|fetch|count|lista?|filedef|report)"
-                }
-            ]
-        },
         "comments": {
             "patterns": [
                 {
@@ -46,10 +37,11 @@
                 }
             ]
         },
-        "statements": {
+        "sections": {
             "patterns": [
                 { "include": "#struct-a-section" },
-                { "include": "#edit-section" }
+                { "include": "#edit-section" },
+                { "include": "#tab-section" }
             ]
         },
         "struct-a-section": {
@@ -83,6 +75,40 @@
                         { "include": "#operators" },
                         { "include": "#numbers" }
                     ]
+                }
+            ]
+        },
+        "tab-section": {
+            "patterns": [
+                {
+                    "comment": "tabs",
+                    "name": "section.$1.quantum",
+                    "match": "^(tab) (.*) (.*)$",
+                    "captures": {
+                        "1": { "name": "storage.type.$1.quantum" },
+                        "2": { "name": "variable.name.quantum" },
+                        "3": {
+                            "patterns": [
+                                {
+                                    "name": "support.function.option.quantum",
+                                    "match": "r?grid"
+                                },
+                                {
+                                    "name": "variable.name.quantum",
+                                    "match": ".*"
+                                }
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
+        "edit-commands": {
+            "patterns": [
+                {
+                    "comment": "Comands for edit section",
+                    "name": "keyword.edit-command.quantum",
+                    "match": "(call|fetch|count|lista?|filedef|report)"
                 }
             ]
         },
