@@ -125,10 +125,10 @@
                     },
                     "patterns": [
                         {
-                            "include": "#arguments"
+                            "include": "#text-values"
                         },
                         {
-                            "include": "#text-values"
+                            "include": "#arguments"
                         }
                     ]
                 }
