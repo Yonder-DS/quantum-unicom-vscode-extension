@@ -1,9 +1,9 @@
 {
-  "name": "quantum-configuration-sample",
-  "displayName": "Quantum Configuration",
-  "description": "Quantum Configuration",
+  "name": "quantum-language-configuration",
+  "displayName": "Quantum Language (unicom)",
+  "description": "Quantum Language (unicom) Configuration",
   "version": "0.0.1",
-  "publisher": "ryanc",
+  "publisher": "RyanCheng",
   "engines": {
     "vscode": "^1.28.0"
   },
