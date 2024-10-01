@@ -2,7 +2,7 @@
   "name": "quantum-language-configuration",
   "displayName": "Quantum Language (unicom)",
   "description": "Quantum Language (unicom) Configuration",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "publisher": "RyanCheng",
   "engines": {
     "vscode": "^1.28.0"
