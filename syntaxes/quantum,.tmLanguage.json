@@ -116,7 +116,7 @@
             "patterns": [
                 {
                     "name": "keyword.control.flow.quantum",
-                    "match": "\\b(if|else|return|goto|do|continue|stop|write|emit|delete|reject)\\b"
+                    "match": "\\b(if|else|return|goto|do|continue|stop|set|write|emit|delete|reject|clear|data|real)\\b"
                 }
             ]
         },
