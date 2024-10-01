@@ -11,6 +11,11 @@
     "Programming Languages"
   ],
   "icon": "quantum-icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Yonder-DS/vs-code/tree/main/extensions/quantum-extension-pack-unicom"
+  },
+  "license": "GPL-3.0-only",
   "contributes": {
     "languages": [
       {
