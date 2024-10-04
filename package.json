@@ -21,8 +21,8 @@
       {
         "id": "quantum",
         "extensions": [".qin", ".qax"],
-        "filenames": ["axes", "tabs"],
-        "filenamePatterns": ["run*", "break*", "edit*", "base*", "mean*", "brk*", "data*"],
+        "filenames": [],
+        "filenamePatterns": ["run*", "axes*", "tabs*", "break*", "edit*", "base*", "mean*", "brk*", "data*"],
         "aliases": [
           "Quantum",
           "qt"
