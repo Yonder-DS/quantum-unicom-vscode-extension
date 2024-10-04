@@ -170,8 +170,10 @@
                     "patterns": [
                         { "include": "#variables" },
                         {
+                            "comment": "Not sure what is the limit",
+                            "disabled": 1,
                             "name": "invalid.text-length.quantum",
-                            "match": "(?<=^.{123})([^;\\n]*)"
+                            "match": "(?<=^.{203})([^;\\n]*)"
                         }
                     ]
                 }
