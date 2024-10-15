@@ -6,7 +6,7 @@
         "qin"
     ],
     "scopeName": "source.quantum",
-    "patterns": [
+    "patterns": [ 
         { "include": "#sections" },
         { "include": "#comments" },
         { "include": "#variables" },
@@ -150,7 +150,7 @@
             "patterns": [
                 {
                     "name": "text.$1.quantum",
-                    "begin": "^\\b(ttl|ttc|ttr|ttg|ttn|BOT)",
+                    "begin": "(?i)^\\b(ttl|ttc|ttr|ttg|ttn|bot|tbl)",
                     "end": "$",
                     "beginCaptures": { "1": { "name": "keyword.text.$1.quantum" } },
                     "patterns": [
@@ -184,7 +184,7 @@
                 {
                     "comment": "axes n statements",
                     "name": "axes.statement.$1.quantum",
-                    "begin": "^\\b(n[0-9]{2}|m|side)([^;]*)",
+                    "begin": "(?i)^\\b(n[0-9]{2}|m|side|net[1-9]|netend[1-9]?)([^;]*)",
                     "end": "$",
                     "captures": {
                         "1": { "name": "keyword.basic-statement.$1.quantum" },

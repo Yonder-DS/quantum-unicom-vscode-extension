@@ -2,11 +2,11 @@
 
 This is the syntax configuration for Quantum:
 
+- Syntax highlighting
 - Comment toggling `/*`
-- Brackets definition `()`
-- Autoclosing `()` `''` `$$`
-- Autosurrounding `()` `''` `$$`
-- Word pattern
+- Bracket matching `()`
+- Bracket autoclosing `()` `''` `$$`
+- Bracket autosurrounding `()` `''` `$$`
 
 ## Recommended User Settings
 
