@@ -13,7 +13,7 @@
   "icon": "quantum-icon.png",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Yonder-DS/vs-code/tree/main/extensions/quantum-extension-pack-unicom"
+    "url": "https://github.com/Yonder-DS/quantum-unicom-vscode-extension"
   },
   "license": "GPL-3.0-only",
   "contributes": {
