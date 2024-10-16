@@ -6,7 +6,7 @@ This is the syntax configuration for Quantum:
 - Comment toggling `/*`
 - Bracket matching `()`
 - Bracket autoclosing `()` `''` `$$`
-- Bracket autosurrounding `()` `''` `$$`
+- Bracket autosurrounding `()` `$$`
 
 ## Recommended User Settings
 
